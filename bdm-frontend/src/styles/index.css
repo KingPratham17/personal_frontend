@@ -1,0 +1,56 @@
+/* Import all modular CSS files */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+@import './components/modals.css';
+@import './components/alerts.css';
+
+@import './layouts/header.css';
+@import './layouts/navigation.css';
+@import './layouts/grid.css';
+
+@import './utils/spacing.css';
+@import './utils/helpers.css';
+
+/* Layout */
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    max-width: var(--max-width);
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-lg);
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        padding: var(--spacing-md);
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
