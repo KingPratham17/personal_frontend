@@ -23,7 +23,13 @@ export function DocumentCard({
           <p style={{ margin: '0.25rem 0 0', fontSize: '0.9rem', color: '#64748b' }}>
             📄 {document.document_type} • {new Date(document.created_at).toLocaleDateString()}
             {hasTranslation && (
-              <span style={{ marginLeft: '0.5rem', color: '#10b981', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+              <span style={{ 
+                marginLeft: '0.5rem', 
+                color: '#10b981', 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                gap: '0.25rem' 
+              }}>
                 <CheckCircle size={14} /> {hasTranslation.lang.toUpperCase()} Translated
               </span>
             )}

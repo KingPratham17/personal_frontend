@@ -3,7 +3,7 @@ import { FileText, Layout, FileEdit, Home } from 'lucide-react';
 import ClauseManager from './components/clauses/ClauseManager';
 import TemplateBuilder from './components/templates/TemplateBuilder';
 import DocumentGenerator from './components/documents/DocumentGenerator';
-import Dashboard from './components/dashboard/Dashboard';
+import Dashboard from './dashboard/Dashboard';
 import './styles/index.css';
 
 function App() {
